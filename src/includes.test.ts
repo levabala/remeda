@@ -38,4 +38,6 @@ describe('includes', function () {
     );
     expect(includes('123', '1')).toEqual(true);
   });
+
+  // TODO: add R.pipe tests
 });
