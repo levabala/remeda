@@ -7,7 +7,7 @@ behave differently from either or both. Be sure to consult each library's
 documentation when migrating._
 
 | Remeda         | Lodash         | Ramda               |
-| -------------- | -------------- | ------------------- |
+|----------------|----------------|---------------------|
 | `addProp`      | `set`          | `set`               |
 | `allPass`      | `-`            | `allPass`           |
 | `anyPass`      | `-`            | `anyPass`           |
@@ -31,6 +31,7 @@ documentation when migrating._
 | `forEach`      | `forEach`      | `forEach`           |
 | `forEachObj`   | `forEach`      | `forEachObjIndexed` |
 | `groupBy`      | `groupBy`      | `groupBy`           |
+| `includes`     | `includes`     | `includes`          |
 | `indexBy`      | `keyBy`        | `indexBy`           |
 | `intersection` | `intersection` | `intersection`      |
 | `last`         | `last`         | `last`              |
@@ -76,18 +77,18 @@ provide the exact functionality of the listed Lodash and Ramda functions.
 Be sure to consult each library's documentation and to check what features
 you are relying on when migrating._
 
-| Lodash         | Ramda          | TypeScript                                 |
-| -------------- | -------------- | ------------------------------------------ |
-| `add`          | `add`          | `(x, y) => x + y`                          |
-| `-`            | `append`       | `(arr, val) => [...arr, val]`              |
-| `constant`     | `always`       | `x => () => x`                             |
-| `identity`     | `identity`     | `x => x`                                   |
-| `isNil`        | `isNil`        | `x => x == null`                           |
-| `nth`          | `nth`          | `n => a[n]`                                |
-| `-`            | `path`         | `a?.b?.c`                                  |
-| `-`            | `propEq`       | `x => x.a === value`                       |
-| `-`            | `propOr`       | `x => x.a ?? defaultValue`                 |
-| `reverse`      | `reverse`      | `(arr : Array<any>) => [...arr].reverse()` |
-| `words`        | `-`            | `str => str.split(/\s+/)`                  |
+| Lodash     | Ramda      | TypeScript                                 |
+|------------|------------|--------------------------------------------|
+| `add`      | `add`      | `(x, y) => x + y`                          |
+| `-`        | `append`   | `(arr, val) => [...arr, val]`              |
+| `constant` | `always`   | `x => () => x`                             |
+| `identity` | `identity` | `x => x`                                   |
+| `isNil`    | `isNil`    | `x => x == null`                           |
+| `nth`      | `nth`      | `n => a[n]`                                |
+| `-`        | `path`     | `a?.b?.c`                                  |
+| `-`        | `propEq`   | `x => x.a === value`                       |
+| `-`        | `propOr`   | `x => x.a ?? defaultValue`                 |
+| `reverse`  | `reverse`  | `(arr : Array<any>) => [...arr].reverse()` |
+| `words`    | `-`        | `str => str.split(/\s+/)`                  |
 
 
