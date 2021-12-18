@@ -27,6 +27,7 @@ export * from './groupBy';
 export * from './guards';
 export * from './identity';
 export * from './indexBy';
+export * from './includes';
 export * from './intersection';
 export * from './keys';
 export * from './last';
